@@ -2,8 +2,10 @@
 
 namespace Config;
 
-use CodeIgniter\Config\BaseConfig;
-use Kint\Renderer\Renderer;
+use Kint\Parser\ConstructablePluginInterface;
+use Kint\Renderer\AbstractRenderer;
+use Kint\Renderer\Rich\TabPluginInterface;
+use Kint\Renderer\Rich\ValuePluginInterface;
 
 /**
  * --------------------------------------------------------------------------
@@ -15,7 +17,7 @@ use Kint\Renderer\Renderer;
  *
  * @see https://kint-php.github.io/kint/ for details on these settings.
  */
-class Kint extends BaseConfig
+class Kint
 {
 	/*
 	|--------------------------------------------------------------------------
